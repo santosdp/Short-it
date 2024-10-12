@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Short it</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <span class="material-symbols-outlined">linked_services</span>
+        <h3>Short - it</h3>
+      </div>
+
+      <div class="header-content">
+        <button class="button-color">Sign up</button>
+        <button class="secondary-button">Login</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="title-section">
+        <h1>Short - it</h1>
+        <h4>The Simplest URL Shortener You Were Waiting For</h4>
+      </section>
+
+      <section class="form-section">
+        <form id="form-link" name="form-link">
+          <div class="form-content">
+            <input
+              type="text"
+              class="input-icon"
+              placeholder="Enter your link here..."
+              id="link_user"
+              name="link_user"
+            />
+            <button id="sendLinkButton" type="submit" class="button-color" value="button">
+              <span class="material-symbols-outlined" id="button-refresh">refresh</span>
+            </button>
+          </div>
+
+          <div class="form-content example-text">
+            <p>Example: https://www.google.com</p>
+          </div>
+
+          <div class="form-content">
+            <h3>Shortened URL</h3>
+          </div>
+
+          <div class="form-content">
+            <input
+              type="text"
+              placeholder="Your URL Shortened"
+              name="link_shortened"
+              id="link_shortened"
+              readonly
+            />
+            <button id="copyButton" class="secondary-button">
+              <span class="material-symbols-outlined">copy_all</span> Copy Link
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
